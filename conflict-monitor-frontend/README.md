@@ -55,3 +55,7 @@ Este es el resumen de los "marroneos" que hemos tenido montando la web y cómo l
 ### 3. ¿Dónde está mi código? (Output Directory)
 **El problema:** Vercel no encontraba la web después de compilar.
 **La solución:** En los ajustes de Vercel, tuvimos que decirle que la carpeta de salida es `dist`. Es donde Vite guarda todo el "pescado" cuando termina de construir la app.
+
+https://vercel.com/tadeus-projects-cf9f74f0/front_end_conflic_ttracker/GCebgAe998xAksyTPxtmU4PoUHbA tadeus
+ 
+https://frontendconflicttracker.vercel.app/ tadeus
