@@ -1,11 +1,11 @@
 import axios from 'axios'
 
-// Esta línea es la magia: usa la variable de Vercel en la nube 
-// y localhost solo cuando estás programando en tu PC.
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api/v1';
+// Pon AQUÍ tu URL real de Railway (la que empieza por https)
+const RAILWAY_URL = 'https://tu-proyecto-backend.up.railway.app/api/v1';
 
 const apiClient = axios.create({
-  baseURL: API_URL, 
+  // Si la variable de Vercel falla, usará la de Railway que acabamos de escribir
+  baseURL: import.meta.env.VITE_API_URL || RAILWAY_URL,
   headers: { 'Content-Type': 'application/json' }
 })
 
